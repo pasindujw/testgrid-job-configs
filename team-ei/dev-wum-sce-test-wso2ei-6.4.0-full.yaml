@@ -20,7 +20,7 @@ infrastructureConfig:
     scripts:
     - name: 'prod-wso2-ei-scenario-deployment'
       description: ''
-      type: CLOUDFORMATIONhttps://github.com/wso2/product-ei.git
+      type: CLOUDFORMATION
       file: integrator/Minimum-HA/integrator-ha.yaml
       inputParameters:
         parseInfrastructureScript: false
@@ -33,7 +33,7 @@ infrastructureConfig:
         InternalPrepareForTest: "True"
 scenarioConfigs:
 - testType: TESTNG
-  remoteRepository: ""
+  remoteRepository: "https://github.com/wso2/product-ei.git"
   remoteBranch: "product-scenarios-dev"
   name: "ei-scenarios"
   description: "ei-scenarios"
