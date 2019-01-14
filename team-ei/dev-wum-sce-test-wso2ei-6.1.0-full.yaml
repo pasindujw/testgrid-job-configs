@@ -1,7 +1,7 @@
 # TestGrid job configuration
 
 version: '0.9'
-emailToList: "milindap@wso2.com,dulanjali@wso2.com"
+emailToList: "kasung@wso2.com,isuruu@wso2.com,milindap@wso2.com,dulanjali@wso2.com,sasikala@wso2.com,isuruuy@wso2.com,chalitha@wso2.com"
 infrastructureConfig:
   iacProvider: CLOUDFORMATION
   infrastructureProvider: AWS
@@ -33,8 +33,10 @@ infrastructureConfig:
         ElasticSearchEndpoint: "https://search-testgrid-prod-hn2zfvehc7i2edigkxnfjljc6y.us-east-1.es.amazonaws.com"
 scenarioConfigs:
 - testType: TESTNG
-  remoteRepository: "https://github.com/dulanjalidilmi/product-ei.git"
+  remoteRepository: "https://github.com/wso2/product-ei.git"
   remoteBranch: "product-scenarios-dev"
   name: "ei-scenarios"
   description: "ei-scenarios"
   file: product-scenarios/test.sh
+  inputParameters:
+    ProductVersion: "6.1.0"
