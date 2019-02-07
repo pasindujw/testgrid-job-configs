@@ -33,6 +33,13 @@ infrastructureConfig:
         AMI: "ami-01b72d1b13ca0b4bc"
         FTPUserName: "wso2user"
         FTPUserPassword: "FTPUserPassword"
+    - name: 'prod-wso2-ei-scenario-activemq-be-deployment'
+      description: ''
+      type: CLOUDFORMATION
+      file: integrator/Sample-Backends/activemq-be.yaml
+      inputParameters:
+        KeyPairName: "deployment-prod"
+        AMI: "ami-01b72d1b13ca0b4bc"
     - name: 'prod-wso2-ei-scenario-deployment'
       description: ''
       type: CLOUDFORMATION
