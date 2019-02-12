@@ -43,7 +43,7 @@ infrastructureConfig:
 scenarioConfigs:
 - testType: TESTNG
   remoteRepository: "https://github.com/dulanjalidilmi/product-ei.git"
-  remoteBranch: "pro-sce-vfs-test"
+  remoteBranch: "product-scenarios-dev-testing"
   name: "ei-scenarios"
   description: "ei-scenarios"
   file: product-scenarios/test.sh
