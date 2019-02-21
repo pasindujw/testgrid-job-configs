@@ -27,12 +27,19 @@ infrastructureConfig:
         AMI: "ami-01b72d1b13ca0b4bc"
         FTPUserName: "wso2user"
         FTPUserPassword: "FTPUserPassword"
+    - name: 'prod-wso2-ei-scenario-activemq-be-deployment'
+      description: ''
+      type: CLOUDFORMATION
+      file: integrator/Sample-Backends/activemq-be.yaml
+      inputParameters:
+        KeyPairName: "deployment-prod"
+        AMI: "ami-01b72d1b13ca0b4bc"
     - name: 'prod-wso2-ei-scenario-deployment'
       description: ''
       type: CLOUDFORMATION
       file: integrator/Minimum-HA/integrator-ha.yaml
       inputParameters:
-        parseInfrastructureScripropt: false
+        parseInfrastructureScript: false
         KeyPairName: "deployment-prod"
         CertificateName: "self-signed-cert"
         DBUsername: "wso2carbon"
@@ -42,10 +49,11 @@ infrastructureConfig:
         InternalPrepareForTest: "True"
 scenarioConfigs:
 - testType: TESTNG
-  remoteRepository: "https://github.com/dulanjalidilmi/product-ei.git"
-  remoteBranch: "pro-sce-11-jms"
+  remoteRepository: "https://github.com/wso2/product-ei.git"
+  remoteBranch: "product-scenarios-dev"
   name: "ei-scenarios"
   description: "ei-scenarios"
   file: product-scenarios/test.sh
   inputParameters:
     ProductVersion: "EI-6.4.0"
+    RemoteProductDir: "/usr/lib/wso2/wso2ei/6.4.0/wso2ei-6.4.0"
