@@ -49,8 +49,8 @@ infrastructureConfig:
         InternalPrepareForTest: "True"
 scenarioConfigs:
 - testType: TESTNG
-  remoteRepository: "https://github.com/wso2/product-ei.git"
-  remoteBranch: "product-scenarios-dev"
+  remoteRepository: "https://github.com/dulanjalidilmi/product-ei.git"
+	remoteBranch: "pro-sce-11-jms"
   name: "ei-scenarios"
   description: "ei-scenarios"
   file: product-scenarios/test.sh
