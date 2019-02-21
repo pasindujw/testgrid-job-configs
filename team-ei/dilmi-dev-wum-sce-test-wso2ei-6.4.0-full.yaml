@@ -32,7 +32,7 @@ infrastructureConfig:
       type: CLOUDFORMATION
       file: integrator/Minimum-HA/integrator-ha.yaml
       inputParameters:
-        parseInfrastructureScript: false
+        parseInfrastructureScripropt: false
         KeyPairName: "deployment-prod"
         CertificateName: "self-signed-cert"
         DBUsername: "wso2carbon"
@@ -43,7 +43,7 @@ infrastructureConfig:
 scenarioConfigs:
 - testType: TESTNG
   remoteRepository: "https://github.com/dulanjalidilmi/product-ei.git"
-  remoteBranch: "pro-sce-vfs-test"
+  remoteBranch: "pro-sce-11-jms"
   name: "ei-scenarios"
   description: "ei-scenarios"
   file: product-scenarios/test.sh
