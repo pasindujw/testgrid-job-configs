@@ -22,7 +22,7 @@ infrastructureConfig:
 scenarioConfigs:
   - testType: JMETER
     remoteRepository: "git@github.com:malshaniS/financial-open-banking.git"
-    remoteBranch: "tgOnBoard"
+    remoteBranch: "product-scenarios-test"
     name: "ob-scenarios"
     description: "ob-scenarios-devtest"
     file: integration-tests/integration-jmeter/test.sh
