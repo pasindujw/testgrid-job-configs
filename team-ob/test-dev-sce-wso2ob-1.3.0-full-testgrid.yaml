@@ -15,7 +15,7 @@ infrastructureConfig:
       remoteBranch: "master"
       description: Provide Infra for running scenario tests
       scripts:
-        - name: 'pasindu-wso2-ob-scenario-deployment'
+        - name: 'wum-wso2-ob-130-scenario-deployment'
           description: ''
           type: CLOUDFORMATION
           file: obam-with-obkm.yaml
