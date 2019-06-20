@@ -29,7 +29,7 @@ infrastructureConfig:
 scenarioConfigs:
   - testType: JMETER
     remoteRepository: "git@github.com:chalitha87/financial-open-banking.git"
-    remoteBranch: "product-scenarios"
+    remoteBranch: "product-scenarios-upstream"
     name: "ob-scenarios"
     description: "ob-scenarios-devtest"
     file: product-scenarios/test.sh
