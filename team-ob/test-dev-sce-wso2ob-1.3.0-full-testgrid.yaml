@@ -8,7 +8,7 @@ infrastructureConfig:
   includes:
      - Ubuntu-18.04
      - SQLServer-SE-13.00
-     - OracleJDK-8
+     - OPEN_JDK8
   provisioners:
     - name: distributed-single-node-deployment
       remoteRepository: "git@github.com:ctienshi/aws-ob.git"
@@ -29,7 +29,7 @@ infrastructureConfig:
 scenarioConfigs:
   - testType: JMETER
     remoteRepository: "git@github.com:chalitha87/financial-open-banking.git"
-    remoteBranch: "product-scenarios"
+    remoteBranch: "product-scenarios-upstream"
     name: "ob-scenarios"
     description: "ob-scenarios-devtest"
     file: product-scenarios/test.sh
